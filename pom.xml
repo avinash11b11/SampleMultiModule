@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.practice.parent</groupId>
 	<artifactId>practice-parent</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
 	<properties>
@@ -27,9 +27,9 @@
 	</dependencyManagement>
 	
 	<scm>
-   <connection>scm:git:https://avinash11b11:Av!n#!(!3191@github.com/avinash11b11/SampleMultiModule.git</connection>
-   <url>https://avinash11b11:Av!n#!(!3191@github.com/avinash11b11/SampleMultiModule</url>
-   <developerConnection>scm:git:https://avinash11b11:Av!n#!(!3191@github.com/avinash11b11/SampleMultiModule.git</developerConnection>
+   <connection>scm:git:git@github.com:avinash11b11/SampleMultiModule.git</connection>
+   <url>git@github.com:avinash11b11/SampleMultiModule.git</url>
+   <developerConnection>scm:git:git@github.com:avinash11b11/SampleMultiModule.git</developerConnection>
   <tag>practice-parent-0.0.2</tag>
   </scm>
 	
