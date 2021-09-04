@@ -27,9 +27,9 @@
 	</dependencyManagement>
 	
 	<scm>
-   <connection>ssh://git@github.com/avinash11b11/SampleMultiModule.git</connection>
+   <connection>https://github.com/avinash11b11/SampleMultiModule</connection>
    <url>https://github.com/avinash11b11/SampleMultiModule</url>
-   <developerConnection>ssh://git@github.com/avinash11b11/SampleMultiModule.git</developerConnection>
+   <developerConnection>https://github.com/avinash11b11/SampleMultiModule</developerConnection>
   <tag>practice-parent-0.0.2</tag>
   </scm>
 	
