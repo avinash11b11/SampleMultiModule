@@ -27,9 +27,9 @@
 	</dependencyManagement>
 	
 	<scm>
-   <connection>scm:git:https://avinash11b11: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@github.com/avinash11b11/SampleMultiModule.git</connection>
-   <url>https://avinash11b11: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@github.com/avinash11b11/SampleMultiModule.git</url>
-   <developerConnection>scm:git:https://avinash11b11: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@github.com/avinash11b11/SampleMultiModule.git</developerConnection>
+   <connection>scm:git:https://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@github.com/avinash11b11/SampleMultiModule.git</connection>
+   <url>https://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@github.com/avinash11b11/SampleMultiModule.git</url>
+   <developerConnection>scm:git:https://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@github.com/avinash11b11/SampleMultiModule.git</developerConnection>
    
   <tag>practice-parent-0.0.2</tag>
   </scm>
