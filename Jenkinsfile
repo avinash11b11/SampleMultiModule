@@ -25,11 +25,11 @@ pipeline{
          stage('Release'){
           
             steps{
-                
+                echo "${params.mytestParam}"
                   withCredentials([usernamePassword(credentialsId: 'nexus-user', passwordVariable: 'nexuspass', usernameVariable: 'nexususer')]) {
                      
                    bat '''
-                   echo "${params.mytestParam}"
+                   
                         git checkout main
                        mvn --settings settings.xml release:clean release:prepare -Dserver.username=${nexususer} -Dserver.password=${nexuspass}
                        '''
