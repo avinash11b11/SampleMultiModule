@@ -20,6 +20,15 @@ pipeline{
                        '''
                 }
             }
+             stage('Release'){
+          
+            steps{
+                  withCredentials([usernamePassword(credentialsId: 'nexus-user', passwordVariable: 'nexuspass', usernameVariable: 'nexususer')]) {
+                   bat '''
+                       mvn --settings settings.xml clean release:clean release:prepare -Dserver.username=${nexususer} -Dserver.password=${nexuspass}
+                       '''
+                }
+            }
         }
     }
 }
