@@ -12,10 +12,12 @@ pipeline{
             }
         }
         stage('Build'){
+            withCredentials([usernamePassword(credentialsId: 'nexus-user', passwordVariable: 'nexuspass', usernameVariable: 'nexususer')]) {
             steps{
                    bat '''
-                       mvn clean install
+                       mvn --settings settings.xml clean install -Dserver.username=${nexususer} -Dserver.password=${nexuspass}
                        '''
+                }
             }
         }
     }
