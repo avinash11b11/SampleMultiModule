@@ -27,7 +27,7 @@ pipeline{
             steps{
                   withCredentials([usernamePassword(credentialsId: 'nexus-user', passwordVariable: 'nexuspass', usernameVariable: 'nexususer')]) {
                    bat '''
-                       mvn --settings settings.xml clean release:clean release:prepare -Dserver.username=${nexususer} -Dserver.password=${nexuspass}
+                       mvn --settings settings.xml release:clean release:prepare -Dserver.username=${nexususer} -Dserver.password=${nexuspass}
                        '''
                 }
             }
