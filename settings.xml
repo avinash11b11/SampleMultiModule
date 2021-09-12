@@ -9,13 +9,13 @@
        <servers>
     <server>
       <id>nexus-snapshot</id>
-      <username>${server.username}</username>
-      <password>${server.password}</password>
+      <username>admin</username>
+      <password>admin123</password>
     </server>
  <server>
       <id>nexus-release</id>
-      <username>${server.username}</username>
-      <password>${server.password}</password>
+      <username>admin</username>
+      <password>admin123</password>
     </server>	
   </servers>
       <mirrors>
@@ -23,6 +23,20 @@
 		
 	  </mirrors>
       <proxies/>
-      <profiles/>
-      <activeProfiles/>
+      <profiles>
+	    <profile>
+     <id>test</id>
+     <repositories>
+       <repository>
+         <id>nexus-release</id>
+         <name>nexus-release</name>
+         <url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
+       </repository>
+     </repositories>
+   </profile>
+	  </profiles>
+      
+	    <activeProfiles>
+    <activeProfile>test</activeProfile>
+  </activeProfiles>
     </settings>
