@@ -36,7 +36,7 @@
     <snapshotRepository>
       <id>nexus-snapshot</id>
       <name>Snapshot</name>
-      <url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
+      <url>http://localhost:8081/nexus/content/repositories/Practice-Snapshot/</url>
     </snapshotRepository>
 </distributionManagement>
 	
