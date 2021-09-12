@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.practice.parent</groupId>
 		<artifactId>practice-parent</artifactId>
-		<version>0.0.2</version>
+		<version>${revision}</version>
 	</parent>
 
 
