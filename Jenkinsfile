@@ -26,6 +26,7 @@ pipeline{
           
             steps{
                 echo "${params.mytestParam}"
+                echo "${env.JAVA_HOME}"
                   withCredentials([usernamePassword(credentialsId: 'nexus-user', passwordVariable: 'nexuspass', usernameVariable: 'nexususer')]) {
                      
                    bat '''
