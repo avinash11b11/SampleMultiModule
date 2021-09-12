@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.practice.parent</groupId>
 	<artifactId>practice-parent</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>pom</packaging>
 	
 	<properties>
@@ -26,24 +26,16 @@
 	</dependencies>
 	</dependencyManagement>
 	
-	<scm>
-   <connection>scm:git:https://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@github.com/avinash11b11/SampleMultiModule.git</connection>
-   <url>https://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@github.com/avinash11b11/SampleMultiModule.git</url>
-   <developerConnection>scm:git:https://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@github.com/avinash11b11/SampleMultiModule.git</developerConnection>
-   
-  <tag>practice-parent-0.0.2</tag>
-  </scm>
-	
 	<distributionManagement>
     <repository>
-      <id>nexus</id>
+      <id>nexus-release</id>
       <name>Releases</name>
-      <url>http://localhost:8081/nexus/content/repositories/MyTestRepo/</url>
+      <url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
     </repository>
     <snapshotRepository>
-      <id>nexus</id>
+      <id>nexus-snapshot</id>
       <name>Snapshot</name>
-      <url>http://localhost:8081/nexus/content/repositories/MyTestRepoSnapshot/</url>
+      <url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
     </snapshotRepository>
 </distributionManagement>
 
