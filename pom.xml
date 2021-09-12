@@ -39,5 +39,11 @@
       <url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
     </snapshotRepository>
 </distributionManagement>
+	
+	<scm>
+   <connection>scm:git:git@github.com:avinash11b11/SampleMultiModule.git</connection>
+   <url>scm:git:git@github.com:avinash11b11/SampleMultiModule.git</url>
+   <developerConnection>scm:git:git@github.com:avinash11b11/SampleMultiModule.git</developerConnection>
+</scm>
 
 </project>
