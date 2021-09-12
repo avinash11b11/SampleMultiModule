@@ -1,42 +1,43 @@
-    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
-      <localRepository>E:\Work Related\custom-maven-repo</localRepository>
-      <interactiveMode/>
-      <offline/>
-      <pluginGroups/>
-       <servers>
-    <server>
-      <id>nexus-snapshot</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
- <server>
-      <id>nexus-release</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>	
-  </servers>
-      <mirrors>
-	
-		
-	  </mirrors>
-      <proxies/>
-      <profiles>
-	    <profile>
-     <id>test</id>
-     <repositories>
-       <repository>
-         <id>nexus-release</id>
-         <name>nexus-release</name>
-         <url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
-       </repository>
-     </repositories>
-   </profile>
-	  </profiles>
-      
-	    <activeProfiles>
-    <activeProfile>test</activeProfile>
-  </activeProfiles>
-    </settings>
+	<localRepository>E:\Work Related\custom-maven-repo</localRepository>
+	<interactiveMode />
+	<offline />
+	<pluginGroups />
+	<servers>
+		<server>
+			<id>nexus-snapshot</id>
+			<username>${server.username}</username>
+			<password>${server.password}</password>
+		</server>
+		<server>
+			<id>nexus-release</id>
+			<username>${server.username}</username>
+			<password>${server.password}</password>
+		</server>
+	</servers>
+	<mirrors>
+
+
+	</mirrors>
+	<proxies />
+	<profiles>
+		<profile>
+			<id>test</id>
+			<repositories>
+				<repository>
+					<id>nexus-release</id>
+					<name>nexus-release</name>
+					<url>http://localhost:8081/nexus/content/repositories/Practice-Release/</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>test</activeProfile>
+	</activeProfiles>
+</settings>
