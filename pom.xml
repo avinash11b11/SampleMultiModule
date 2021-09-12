@@ -8,7 +8,7 @@
 	
 	<properties>
 		<junit.version>3.8.1</junit.version>
-		<revision>0.0.5</revision>
+		<revision>0.0.5-SNAPSHOT</revision>
 	</properties>
 	
 	<modules>
